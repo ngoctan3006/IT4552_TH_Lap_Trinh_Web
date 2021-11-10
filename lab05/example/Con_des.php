@@ -1,30 +1,24 @@
 <?php
 
-class BaseClass
-{
+class BaseClass {
     protected $name = "BaseClass";
 
-    function __construct()
-    {
+    function __construct() {
         print("In " . $this->name . " constructor\n");
     }
 
-    function __destruct()
-    {
+    function __destruct() {
         print("Destroying " . $this->name . "\n");
     }
 }
 
-class SubClass extends BaseClass
-{
-    function __construct()
-    {
+class SubClass extends BaseClass {
+    function __construct() {
         $this->name = "SubClass";
         parent::__construct();
     }
 
-    function __destruct()
-    {
+    function __destruct() {
         parent::__destruct();
     }
 }

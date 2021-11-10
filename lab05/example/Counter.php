@@ -1,22 +1,18 @@
 <?php
 
-class Counter
-{
+class Counter {
     private static $count = 0;
     const VERSION = 2.0;
 
-    function __construct()
-    {
+    function __construct() {
         self::$count++;
     }
 
-    function __destruct()
-    {
+    function __destruct() {
         self::$count--;
     }
 
-    static function getCount()
-    {
+    static function getCount() {
         return self::$count;
     }
 }

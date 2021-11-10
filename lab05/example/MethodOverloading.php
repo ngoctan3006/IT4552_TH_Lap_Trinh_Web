@@ -1,15 +1,12 @@
 <?php
 
-class MethodTest
-{
-    public function __call($name, $arguments)
-    {
+class MethodTest {
+    public function __call($name, $arguments) {
         // note : value of $name is case sensitive.
         echo "Calling object method '$name' " . implode(', ', $arguments) . "\n";
     }
 
-    public static function __callStatic($name, $arguments)
-    {
+    public static function __callStatic($name, $arguments) {
         // note : value of $name is case sensitive.
         echo "Calling static method '$name' " . implode(', ', $arguments) . "\n";
     }

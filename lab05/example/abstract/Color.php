@@ -1,5 +1,4 @@
 <?php
-class Color
-{
+class Color {
     public $name;
 }

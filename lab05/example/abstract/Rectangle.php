@@ -1,17 +1,14 @@
 <?php
 require_once "Polygon.php";
-class Rectangle extends Polygon
-{
+class Rectangle extends Polygon {
     public $width;
     public $height;
 
-    public function getArea()
-    {
+    public function getArea() {
         return ($this->width * $this->height);
     }
 
-    public function getNumberOfSides()
-    {
+    public function getNumberOfSides() {
         return (4);
     }
 }

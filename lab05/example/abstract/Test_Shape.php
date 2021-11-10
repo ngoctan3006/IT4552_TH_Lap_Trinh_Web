@@ -34,18 +34,15 @@ $myCollection[] = $c;
 unset($c);
 
 foreach ($myCollection as $s) {
-    if ($s instanceof Shape) 
-    {
+    if ($s instanceof Shape) {
         print("Area: " . $s->getArea() . "\n");
     }
 
-    if($s instanceof Polygon) 
-    {
-        print("Sides: " .$s->getNumberOfSides() . "\n");
+    if ($s instanceof Polygon) {
+        print("Sides: " . $s->getNumberOfSides() . "\n");
     }
 
-    if($s instanceof Color) 
-    {
+    if ($s instanceof Color) {
         print("Color: $s->name\n");
     }
 

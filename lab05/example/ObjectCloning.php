@@ -1,33 +1,27 @@
 <?php
-class ObjectTracker
-{
+class ObjectTracker {
     private static $nextSerial = 0;
     private $id, $name;
 
-    function __construct($name)
-    {
+    function __construct($name) {
         $this->name = $name;
         $this->id = ++self::$nextSerial;
     }
 
-    function __clone()
-    {
+    function __clone() {
         $this->name = "Clone of $this->name";
         $this->id = ++self::$nextSerial;
     }
 
-    function getId()
-    {
+    function getId() {
         return ($this->id);
     }
 
-    function getName()
-    {
+    function getName() {
         return ($this->name);
     }
 
-    function setName($name)
-    {
+    function setName($name) {
         $this->name = $name;
     }
 }

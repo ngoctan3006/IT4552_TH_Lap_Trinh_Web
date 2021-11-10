@@ -18,8 +18,7 @@ class PropertyTest {
         }
     }
 
-    public function __isset($name)
-    {
+    public function __isset($name) {
         echo "Is '$name' set?\n";
         return isset($this->data[$name]);
     }
