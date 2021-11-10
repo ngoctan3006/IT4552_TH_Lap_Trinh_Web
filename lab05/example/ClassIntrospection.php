@@ -28,4 +28,3 @@ function display_classes() {
 }
 
 display_classes();
-?>

@@ -1,6 +1,7 @@
 <?php
 
-class BaseClass {
+class BaseClass
+{
     protected $name = "BaseClass";
 
     function __construct()
@@ -14,7 +15,8 @@ class BaseClass {
     }
 }
 
-class SubClass extends BaseClass {
+class SubClass extends BaseClass
+{
     function __construct()
     {
         $this->name = "SubClass";
@@ -27,7 +29,7 @@ class SubClass extends BaseClass {
     }
 }
 
-$obj1 = new SubClass(); 
+$obj1 = new SubClass();
 // In SubClass constructor
 // Destroying SubClass
 $pbj2 = new BaseClass();

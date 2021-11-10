@@ -1,6 +1,6 @@
 <?php
 require_once "Polygon.php";
-class Rectangle extends Polygon 
+class Rectangle extends Polygon
 {
     public $width;
     public $height;

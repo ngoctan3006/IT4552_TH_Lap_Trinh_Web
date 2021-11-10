@@ -1,6 +1,8 @@
 <?php
+
 namespace Info;
-class Page 
+
+class Page
 {
     private $page;
     private $title;
@@ -20,13 +22,13 @@ class Page
         $this->page .= "<html><head><meta charset='UTF-8'><title>$this->title</title></head>";
     }
 
-    public function addContent($content) 
+    public function addContent($content)
     {
         $this->addHeader();
-        $this->page .="<body>Title: $this->title<br>Copyright: &copy;$this->copyright<br>Year: $this->year<br>Content: $content</body>";
+        $this->page .= "<body>Title: $this->title<br>Copyright: &copy;$this->copyright<br>Year: $this->year<br>Content: $content</body>";
     }
 
-    public function get() 
+    public function get()
     {
         return $this->page;
     }

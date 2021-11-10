@@ -51,4 +51,3 @@ foreach ($myCollection as $s) {
 
     print("\n");
 }
-?>

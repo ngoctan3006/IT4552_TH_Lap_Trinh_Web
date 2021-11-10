@@ -1,6 +1,7 @@
 <?php
 
-class MethodTest {
+class MethodTest
+{
     public function __call($name, $arguments)
     {
         // note : value of $name is case sensitive.

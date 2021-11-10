@@ -1,5 +1,6 @@
 <?php
-function get_methods($object) {
+function get_methods($object)
+{
     $methods = get_class_methods(get_class($object));
     if (get_parent_class($object)) {
         $parent_methods = get_class_methods(get_parent_class($object));
@@ -8,7 +9,8 @@ function get_methods($object) {
     return $methods;
 }
 
-function get_inherited_methods($object) {
+function get_inherited_methods($object)
+{
     $methods = get_class_methods(get_class($object));
     if (get_parent_class($object)) {
         $parent_methods = get_class_methods(get_parent_class($object));
@@ -17,7 +19,8 @@ function get_inherited_methods($object) {
     return $methods;
 }
 
-function get_lineage($object) {
+function get_lineage($object)
+{
     if (get_parent_class($object)) {
         $parent = get_parent_class($object);
         $parent_object = new $parent;
@@ -29,7 +32,8 @@ function get_lineage($object) {
     return $lineage;
 }
 
-function get_child_classes($object) {
+function get_child_classes($object)
+{
     $classes = get_declared_classes();
     $children = array();
     foreach ($classes as $class) {
@@ -43,7 +47,8 @@ function get_child_classes($object) {
     return $children;
 }
 
-function print_object_info($object) {
+function print_object_info($object)
+{
     $class = get_class($object);
     echo '<h2>Class</h2>';
     echo "<p>$class</p>";
@@ -90,22 +95,32 @@ function print_object_info($object) {
     echo "\n";
 }
 
-class A {
+class A
+{
     var $foo = 'foo';
     var $bar = 'bar';
     var $baz = 17.0;
 
-    function first_function() {}
-    function second_function() {}
+    function first_function()
+    {
+    }
+    function second_function()
+    {
+    }
 }
 
-class B extends A {
+class B extends A
+{
     var $quux = false;
 
-    function third_function() {}
+    function third_function()
+    {
+    }
 }
 
-class C extends B {}
+class C extends B
+{
+}
 
 $a = new A;
 $a->foo = 'sylvie';

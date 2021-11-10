@@ -6,6 +6,6 @@ class Circle extends Shape
 
     public function getArea()
     {
-        return ( pi() * $this->radius * $this->radius);
+        return (pi() * $this->radius * $this->radius);
     }
 }

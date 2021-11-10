@@ -1,9 +1,10 @@
-
 <html lang="en" dir="ltr">
+
 <head>
     <meta charset="UTF-8">
     <title>Exercise Lab05</title>
 </head>
+
 <body>
     <form action="Handle.php" method="POST">
         <label>Title: </label>
@@ -25,4 +26,5 @@
         <input type="submit" name="" value="SUBMIT">
     </form>
 </body>
+
 </html>

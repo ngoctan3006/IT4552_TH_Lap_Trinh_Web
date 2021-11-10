@@ -7,4 +7,3 @@ $content = $_POST['content'];
 $page = new Info\Page($title, $year, $copyright);
 $page->addContent($content);
 echo $page->get();
-?>
