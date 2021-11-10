@@ -43,13 +43,11 @@
     </form>
 
     <?php
-    function dateDiffInDays($date1, $date2)
-    {
+    function dateDiffInDays($date1, $date2) {
         $diff = strtotime($date1) - strtotime($date2);
         return abs(round($diff / 86400));
     }
-    function getDiffYear($date1, $date2)
-    {
+    function getDiffYear($date1, $date2) {
         $d1 = date('Y', strtotime($date1));
         $d2 = date('Y', strtotime($date2));
         $years = abs($d1 - $d2);
