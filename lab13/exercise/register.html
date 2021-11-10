@@ -1,0 +1,53 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>REGISTRATION FORM</title>
+
+</head>
+<body onload="document.registerForm.username.focus();">
+<div class="container">
+
+  <div class="row">
+    <div style="width: 400px; margin: 0 auto">
+      <form name="registerForm" onsubmit="return ValidateForm();">
+        <!-- return so that the form do not submit,
+        the true/false gets passed up to the form's submit event (which looks for this and prevents
+        submission if it gets a false).
+        only submit when validation is true -->
+        <legend>Registration Form </legend>
+        <div class="form-group">
+          <label for="userid">Username</label>
+          <input type="text" class="form-control" placeholder="Enter username" name="username">
+        </div>
+
+        <div class="form-group">
+          <label for="">Password</label>
+          <input type="password" class="form-control" placeholder="Enter password" name="password" id=""
+                 placeholder="">
+        </div>
+
+        <div class="form-group">
+          <label for="">Email</label>
+          <input type="text" name="email" class="form-control" placeholder=""
+                 aria-describedby="helpId">
+        </div>
+
+        <div class="form-group">
+          <label for="">Phone number</label>
+          <input type="text" name="phone" class="form-control" placeholder=""
+                 aria-describedby="helpId">
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="reset" class="btn btn-danger">Reset</button>
+      </form>
+    </div>
+  </div>
+</div>
+<script src="./validation.js"></script>
+</body>
+</html>
