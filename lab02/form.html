@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<title>PHP Input Form</title>
+
+<head>
+    <style>
+        body {
+            font-size: 20px;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        input {
+            padding: 10px;
+            margin: 3px;
+            border-color: 3px;
+            outline-color: blueviolet;
+        }
+
+        input {
+            margin-left: 10px;
+        }
+
+        .hobby {
+            margin-left: 57px;
+        }
+
+        .submit {
+            padding: 0.35em 1.2em;
+            margin-left: 67px;
+            margin-top: 1.8rem;
+            text-align: center;
+            transition: all 0.2s;
+        }
+
+        .submit:hover {
+            color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <h2> PHP Input Form Exercise</h2>
+    <form action="" method="post">
+        <ul class="list">
+            <li>
+                Name <input type="text" name="your_name" id="name">
+            </li>
+            <li>
+                Phone <input type="text" name="phone" id="phone">
+            </li>
+
+            <li>Class &nbsp;<input type="text" name="your_class" id="your_class">
+            </li>
+
+            <li>School<input type="text" name="your_school" id="your_school"></li>
+
+            <li style="margin-top: 10px;">Gender
+                <input type="radio" name="gender" id="gender" value="female">Female
+                <input type="radio" name="gender" id="gender" value="male">Male
+                <input type="radio" name="gender" id="gender" value="other">Other
+            </li>
+
+            <li style="margin-top: 10px;">Hobby
+                <div class="hobby">
+                    <input type="checkbox" id="" value="" name="">
+                    <label for="hob1">Dance</label>
+                    <br>
+                    <input type="checkbox" id="" value="" name="">
+                    <label for="hob1">Volunteer</label>
+                    <br>
+                    <input type="checkbox" id="" value="" name="">
+                    <label for="hob1">Research</label>
+                    <br>
+                    <input type="checkbox" id="" value="" name="">
+                    <label for="hob1">Food Review</label>
+                    <br>
+                    <input type="checkbox" id="" value="" name="">
+                    <label for="hob1">Travel</label>
+                    <br>
+                </div>
+            </li>
+            <input class="submit" type="submit" value="submit">
+        </ul>
+    </form>
+</body>
+
+</html>
